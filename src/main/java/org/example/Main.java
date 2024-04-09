@@ -29,5 +29,15 @@ public class Main {
         linkedList.remove(3);
         endTime = System.nanoTime();
         System.out.printf("Linked List: %d \n", endTime - startTime);
+
+        System.out.println("Время выполнения операции поиска (в наносекундах):");
+        startTime = System.nanoTime();
+        arrayList.contains(33);
+        endTime = System.nanoTime();
+        System.out.printf("Array List: %d \n", endTime - startTime);
+        startTime = System.nanoTime();
+        linkedList.contains(33);
+        endTime = System.nanoTime();
+        System.out.printf("Linked List: %d \n", endTime - startTime);
     }
 }
